@@ -2,8 +2,8 @@ import { Ship, Gameboard } from './battleship-app.js'
 
 const exampleBoard = new Gameboard()
 exampleBoard.place([
-    [1, 1],
-    [1, 2],
+    [0, 0],
+    [0, 1],
 ])
 
 test('gameboard places ship', () => {
@@ -13,8 +13,8 @@ test('gameboard places ship', () => {
 })
 
 test('receive attack', () => {
-    exampleBoard.receiveAttack([1, 2])
-    exampleBoard.receiveAttack([2, 2])
+    exampleBoard.receiveAttack([0, 1])
+    exampleBoard.receiveAttack([1, 1])
     expect(exampleBoard.board[0][1].occupied.hits).toBe(1)
     expect(exampleBoard.board[1][1].occupied).toBe('missedShot')
     exampleBoard.receiveAttack([1, 1])
