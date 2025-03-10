@@ -37,7 +37,7 @@ body {
     align-items: center;
 }
 
-.start-button {
+.start-button, .place-button {
     margin-top: 25px;
     padding: 3px 10px;
     font-size: 16px;
@@ -46,7 +46,16 @@ body {
     border: 1px solid black;
 }
 
-.heading > div > h2 {
+.start-button {
+    padding: 3px 12px
+}
+
+.place-button {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.winner-header {
     height: 30px;
     margin-top: 15px;
     font-size: 24px;
@@ -110,4 +119,17 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+}
+
+.sailBoat {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    filter: invert(59%) sepia(85%) saturate(6975%) hue-rotate(181deg) brightness(96%) contrast(98%);
+}
+
+.hex {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
 }
